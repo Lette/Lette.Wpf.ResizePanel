@@ -1,0 +1,55 @@
+﻿<Window
+    x:Class="Lette.Wpf.ResizePanel.Examples.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ext="clr-namespace:Lette.Wpf.ResizePanel;assembly=Lette.Wpf.ResizePanel"
+    mc:Ignorable="d"
+    Title="ResizePanel Examples"
+    WindowStartupLocation="CenterScreen"
+    Height="650"
+    Width="800">
+
+    <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+        <StackPanel
+            HorizontalAlignment="Stretch">
+
+            <Expander Header="ResizePanel in Expander">
+                <ext:ResizePanel Height="200" MinHeight="100">
+                    <Border BorderBrush="Red" BorderThickness="2">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock HorizontalAlignment="Center">Stuff</TextBlock>
+                            <TextBlock HorizontalAlignment="Center">in the</TextBlock>
+                            <TextBlock HorizontalAlignment="Center">center!</TextBlock>
+                        </StackPanel>
+                    </Border>
+                </ext:ResizePanel>
+            </Expander>
+
+            <ext:ResizePanel x:Name="ResizePanel1" Background="Blue" Height="150" MinHeight="100">
+                <StackPanel>
+                    <TextBlock Text="{Binding ElementName=ResizePanel1, Path=MinHeight}" />
+                    <TextBlock Text="{Binding ElementName=ResizePanel1, Path=ActualHeight}" />
+                </StackPanel>
+            </ext:ResizePanel>
+
+            <ext:ResizePanel x:Name="ResizePanel2" Background="Red" Height="100">
+                <StackPanel>
+                    <TextBlock Text="{Binding ElementName=ResizePanel2, Path=MinHeight}" />
+                    <TextBlock Text="{Binding ElementName=ResizePanel2, Path=ActualHeight}" />
+                </StackPanel>
+            </ext:ResizePanel>
+
+            <ext:ResizePanel
+                Background="Green"
+                Height="100"
+                MinHeight="0"
+                ResizeGripHeight="20"
+                ResizeGripBackground="#ffa0a0"
+                ResizeGripOnHoverBackground="#ff6060"
+                ResizeGripOnDragBackground="#ff2020" />
+        </StackPanel>
+    </ScrollViewer>
+
+</Window>
