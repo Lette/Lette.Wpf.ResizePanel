@@ -3,6 +3,17 @@
     <PropertyGroup>
         <TargetFrameworks>netcoreapp3.1;net472</TargetFrameworks>
         <UseWPF>true</UseWPF>
+        <Version>1.0.0</Version>
+        <Authors>Christoffer Lette</Authors>
+        <Company>Lette Consulting AB</Company>
+        <Title>A user-resizable panel.</Title>
+        <Description>ResizePanel, a custom control used for creating a panel/content control that is vertically resizable by user interaction through a draggable Thumb control.</Description>
+        <Copyright>none</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/Lette/Lette.Wpf.ResizePanel</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryBranch>master</RepositoryBranch>
+        <RepositoryCommit>$(CURRENT_COMMIT)</RepositoryCommit>
     </PropertyGroup>
 
 </Project>
