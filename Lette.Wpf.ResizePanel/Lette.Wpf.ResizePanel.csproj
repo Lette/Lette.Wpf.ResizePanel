@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
     <PropertyGroup>
-        <TargetFrameworks>netcoreapp3.1;net472</TargetFrameworks>
+        <TargetFrameworks>netcoreapp3.0;net40</TargetFrameworks>
         <UseWPF>true</UseWPF>
         <Version>1.0.0</Version>
         <Authors>Christoffer Lette</Authors>
@@ -12,7 +12,6 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/Lette/Lette.Wpf.ResizePanel</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <RepositoryBranch>master</RepositoryBranch>
         <RepositoryCommit>$(CURRENT_COMMIT)</RepositoryCommit>
     </PropertyGroup>
 
